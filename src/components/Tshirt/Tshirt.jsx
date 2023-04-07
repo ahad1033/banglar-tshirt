@@ -10,7 +10,7 @@ const Tshirt = ({tshirt, handelAddToCart}) => {
             <img src={picture} alt="" />
             <h4>{name}</h4>
             <p>Price: ${price}</p>
-            <button onCanPlay={handelAddToCart}>Buy Now</button>
+            <button onClick={() => handelAddToCart(tshirt)}>Buy Now</button>
         </div>
     );
 };
